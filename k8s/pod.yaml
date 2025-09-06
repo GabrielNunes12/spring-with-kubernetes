@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: java-spring-k8s-pod
+  labels:
+    app: java-spring-k8s
+spec:
+  containers:
+    - name: backend
+      image: eobilas/java-spring-kubernetes:latest
+      ports:
+        - containerPort: 8080
